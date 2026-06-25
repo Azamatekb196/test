@@ -1,0 +1,44 @@
+
+
+
+
+
+
+
+.container {
+  display: flex;
+  width: 900px;
+  height: 250px;
+  justify-content: space-between;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+.item::before {
+  display: flex;
+  content: "";
+  
+  width: 200px;
+  height: 200px;
+  
+  
+  background-color: brown;
+
+
+  position: absolute;
+  z-index: 0;
+}
+
+.icon {
+  width: 150px;
+  position: relative;
+  z-index: 1;
+}
+
